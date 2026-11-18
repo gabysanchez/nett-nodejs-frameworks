@@ -1,0 +1,17 @@
+meta {
+  name: Update Event
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{baseUrl}}/events/{{eventId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Encuentro de Node.js - nueva edición"
+  }
+}

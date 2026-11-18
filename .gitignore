@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+
+# Compilación y cobertura
+dist/
+coverage/
+*.tsbuildinfo
+
+# Configuración local
+.env
+.env.*
+!.env.example
+
+# Registros de npm
+npm-debug.log*

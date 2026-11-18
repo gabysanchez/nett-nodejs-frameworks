@@ -1,0 +1,15 @@
+meta {
+  name: Delete Events by ID
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/events?id={{eventId}}
+  body: none
+  auth: none
+}
+
+params:query {
+  id: {{eventId}}
+}

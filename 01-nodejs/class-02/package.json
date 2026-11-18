@@ -1,0 +1,21 @@
+{
+  "name": "nett-class-02-native-student",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch --experimental-strip-types src/index.ts",
+    "build": "tsc",
+    "start": "node --env-file-if-exists=.env dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test tests/api.test.mjs",
+    "test:exercises": "npm run build && node --test tests/exercises.test.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

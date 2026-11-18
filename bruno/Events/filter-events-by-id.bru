@@ -1,0 +1,15 @@
+meta {
+  name: Filter Events by ID
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/events?id={{eventId}}
+  body: none
+  auth: none
+}
+
+params:query {
+  id: {{eventId}}
+}
